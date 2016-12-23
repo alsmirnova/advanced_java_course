@@ -1,6 +1,6 @@
 package adv_java.LFU_cache;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -11,7 +11,7 @@ public class LFUCache {
 
     private static int initialCapacity = 10;
 
-    private static LinkedHashMap<Integer, EntryCache> cacheMap = new LinkedHashMap<Integer, EntryCache>();
+    private static HashMap<Integer, EntryCache> cacheMap = new HashMap<Integer, EntryCache>();
 /* LinkedHashMap is used because it has features of both HashMap and LinkedList.
  * Thus, we can get an entry in O(1) and also, we can iterate over it easily.
  * */
